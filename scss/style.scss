@@ -1,0 +1,135 @@
+@import "_nullStyle";
+@import "_fonts";
+
+body {
+   font-family: "Montserrat", sans-serif;
+}
+
+.header {
+   width: 100%;
+   height: 100vh;
+   background: url("../images/background.jpg") center center/cover no-repeat;
+   color: #ffffff;
+   a {
+      color: #ffffff;
+   }
+}
+.intro {
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+   padding: 28px 0;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.header__body {
+   display: flex;
+   flex-direction: column;
+}
+.header__row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.header__logo {
+   font-size: 30px;
+   font-weight: 700;
+}
+.header__logo-link {
+}
+.header__nav {
+}
+.header__menu {
+   display: flex;
+}
+.nav__link {
+   font-size: 14px;
+   text-transform: uppercase;
+   margin-left: 55px;
+   &:first-child {
+      margin-left: 0;
+   }
+   a:hover {
+      color: #fce38a;
+      position: relative;
+      &::after {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 3px;
+         background-color: #fce38a;
+         left: 0;
+         bottom: -12px;
+      }
+   }
+}
+.header__content {
+   text-align: center;
+   margin-top: 180px;
+}
+.header__subtitle {
+   font-family: "KaushanScript";
+   font-size: 72px;
+}
+
+.header__title {
+   margin: 42px auto 0px;
+   max-width: 800px;
+   font-size: 150px;
+   font-weight: 700;
+   line-height: 140px;
+   text-transform: uppercase;
+}
+.header__button {
+   display: inline-block;
+   font-size: 14px;
+   font-weight: 700;
+   text-transform: uppercase;
+   padding: 15px 32px;
+   border: 3px solid #ffffff;
+   margin-top: 140px;
+   position: relative;
+   &::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background-color: #fff;
+      position: absolute;
+      top: -65px;
+      left: 50px;
+   }
+}
+.header__bottom {
+}
+.bottom__nav {
+   display: flex;
+   margin-top: 100px;
+   justify-content: space-between;
+}
+.bottom__link {
+   opacity: 0.5;
+   font-size: 18px;
+   text-transform: uppercase;
+   &:hover{
+      opacity: 1;
+   }
+   span{
+      font-size: 24px;
+      font-weight: 700;
+      margin-right: 10px;
+      position: relative;
+      &::before{
+         content: '';
+         width: 280px;
+         height: 3px;
+         background-color: #fff;
+         position: absolute;
+         left: 0;
+         top: -20px;
+      }
+   }
+}
