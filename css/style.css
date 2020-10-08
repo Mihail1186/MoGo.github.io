@@ -118,8 +118,9 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1230px;
   margin: 0 auto;
+  padding: 0px 15px;
 }
 
 .header__body {
@@ -282,10 +283,10 @@ body {
   margin-right: 10px;
 }
 
-.about__inner {
+.inner {
   width: 100%;
   text-align: center;
-  padding: 90px 0 110px;
+  padding: 90px 0;
 }
 
 .subtitle {
@@ -436,14 +437,6 @@ body {
 }
 
 /* =====================servisces==================== */
-.services__inner {
-  padding: 90px 0;
-}
-
-.services__row {
-  text-align: center;
-}
-
 .services__column {
   margin-top: 100px;
 }
@@ -541,4 +534,27 @@ body {
   font-size: 15px;
   line-height: 24px;
   max-width: 270px;
+}
+
+/* ===================design=============== */
+.design {
+  background: url("../images/bg_2.jpg") center center/cover no-repeat;
+}
+
+.design__inner {
+  text-align: center;
+  padding: 90px 0 0;
+}
+
+.design__content {
+  position: relative;
+  max-width: 660px;
+  margin: 0 auto;
+  margin-top: 86px;
+}
+
+.design__iphone {
+  position: absolute;
+  bottom: -90px;
+  right: -70px;
 }
