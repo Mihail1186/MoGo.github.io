@@ -151,7 +151,7 @@ body {
 
 //==================about===========================//
 
-.inner{
+.inner {
    width: 100%;
    text-align: center;
    padding: 90px 0;
@@ -279,9 +279,6 @@ body {
 
 /* =====================servisces==================== */
 
-
-
-
 .services__column {
    margin-top: 100px;
 }
@@ -295,11 +292,11 @@ body {
    padding: 50px 0 50px 60px;
    &:nth-child(1),
    &:nth-child(2),
-   &:nth-child(3){
-      border-bottom: 1px solid #e5e5e5;;
+   &:nth-child(3) {
+      border-bottom: 1px solid #e5e5e5;
       &:after {
          content: "";
-         background: url('../images/services/services_0.png') no-repeat;
+         background: url("../images/services/services_0.png") no-repeat;
          position: absolute;
          width: 100%;
          height: 31px;
@@ -310,7 +307,7 @@ body {
 
    &:nth-child(2)::after {
       content: "";
-      background: url('../images/services/services_1.png') no-repeat;
+      background: url("../images/services/services_1.png") no-repeat;
       position: absolute;
       width: 100%;
       height: 31px;
@@ -319,7 +316,7 @@ body {
    }
    &:nth-child(3)::after {
       content: "";
-      background: url('../images/services/services_2.png') no-repeat;
+      background: url("../images/services/services_2.png") no-repeat;
       position: absolute;
       width: 100%;
       height: 31px;
@@ -328,7 +325,7 @@ body {
    }
    &:nth-child(4)::after {
       content: "";
-      background: url('../images/services/services_3.png') no-repeat;
+      background: url("../images/services/services_3.png") no-repeat;
       position: absolute;
       width: 100%;
       height: 31px;
@@ -337,7 +334,7 @@ body {
    }
    &:nth-child(5)::after {
       content: "";
-      background: url('../images/services/services_4.png') no-repeat;
+      background: url("../images/services/services_4.png") no-repeat;
       position: absolute;
       width: 100%;
       height: 31px;
@@ -346,14 +343,13 @@ body {
    }
    &:nth-child(6)::after {
       content: "";
-      background: url('../images/services/services_5.png') no-repeat;
+      background: url("../images/services/services_5.png") no-repeat;
       position: absolute;
       width: 100%;
       height: 31px;
       left: 0;
       top: 50px;
    }
-
 }
 .services__subject {
    color: #333333;
@@ -369,19 +365,15 @@ body {
    max-width: 270px;
 }
 
-
-
 /* ===================design=============== */
 
-
 .design {
-   background: url('../images/bg_2.jpg')center center/ cover no-repeat;
+   background: url("../images/bg_2.jpg") center center/ cover no-repeat;
 }
 
 .design__inner {
    text-align: center;
    padding: 90px 0 0;
-
 }
 .design__row {
 }
@@ -398,8 +390,6 @@ body {
    max-width: 660px;
    margin: 0 auto;
    margin-top: 86px;
-
-
 }
 .design__ipod {
 }
@@ -407,5 +397,199 @@ body {
    position: absolute;
    bottom: -90px;
    right: -70px;
+}
 
+/* ===================wedo======================= */
+
+.wedo__inner {
+   margin-top: 20px;
+}
+
+.wedo__text {
+   margin: 90px 0;
+   font-family: "Roboto-Regular";
+   color: #999999;
+   font-size: 15px;
+   line-height: 24px;
+}
+
+.wedo__items {
+   display: flex;
+   margin: 0 -15px;
+}
+.wedo__item {
+   width: 50%;
+   padding: 0 15px;
+}
+
+.acoordion {
+   text-align: left;
+}
+.acoordion__item {
+   border: 1px solid #e5e5e5;
+   margin-bottom: 10px;
+   &:last-child {
+      margin-bottom: 0px;
+   }
+}
+.accordion__title {
+   color: #333333;
+   font-size: 14px;
+   text-transform: uppercase;
+   padding: 24px 20px 20px 60px;
+   display: block;
+   cursor: pointer;
+   transition: background 0.3s ease-out;
+   &:hover {
+      background-color: #e5e5e5;
+   }
+
+   position: relative;
+   &::before {
+      content: "";
+      background: url("../images/wedo/icons/wedo_0.png") center center/cover no-repeat;
+      width: 30px;
+      height: 30px;
+      left: 15px;
+      top: 25%;
+      position: absolute;
+   }
+   &::after {
+      content: "";
+      height: 20px;
+      width: 20px;
+      border-top: 4px solid #33333398;
+      border-right: 4px solid #33333393;
+      position: absolute;
+      top: 45%;
+      right: 20px;
+      transform: translateY(-50%) rotate(135deg);
+   }
+}
+
+.title__1 {
+   &::before {
+      content: "";
+      background: url("../images/wedo/icons/wedo_1.png") center center/cover no-repeat;
+      width: 30px;
+      height: 30px;
+      left: 15px;
+      top: 25%;
+      position: absolute;
+   }
+}
+.title__2 {
+   &::before {
+      content: "";
+      background: url("../images/wedo/icons/wedo_2.png") center center/cover no-repeat;
+      width: 30px;
+      height: 30px;
+      left: 15px;
+      top: 25%;
+      position: absolute;
+   }
+}
+
+.accordion__input {
+   width: 0;
+   height: 0;
+   position: absolute;
+   appearance: none;
+   -webkit-appearance: none;
+}
+
+.accordion__input:checked ~ .accordion__title {
+   background-color: #e5e5e5;
+   &::after {
+      transform: rotate(-45deg);
+   }
+}
+
+.accordion__input:checked ~ .accordion__text {
+   display: block;
+}
+
+.accordion__text {
+   font-style: italic;
+   color: #999999;
+   font-family: "Roboto-Regular";
+   font-size: 15px;
+   line-height: 24px;
+   padding: 20px;
+   display: none;
+   height: 180px;
+   overflow-y: auto;
+}
+
+/* ============slider============== */
+
+.slider {
+   background-color: #f8f8f8;
+}
+
+.slider__inner {
+   position: relative;
+}
+
+.slider__container{
+
+}
+
+.slider__track {
+   display: flex;
+   padding: 80px 0;
+   overflow: hidden;
+}
+
+.slider__item {
+   display: flex;
+   padding: 0 90px;
+}
+
+.slider__image {
+   padding: 45px;
+   border: 3px solid #95e1d3;
+}
+.slider__img {
+}
+.slider__text {
+   font-style: italic;
+   color: #999999;
+   font-family: "Roboto-Regular";
+   font-size: 15px;
+   line-height: 24px;
+   margin-left: 60px;
+}
+.slider__autor {
+   color: #333333;
+   font-family: "KaushanScript";
+   font-size: 24px;
+   position: relative;
+   padding-left: 70px;
+   margin-top: 23px;
+   &::before {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background-color: #f38181;
+      position: absolute;
+      left: 0;
+      top: 50%;
+   }
+}
+
+/* slider style */
+
+.slider__buttons {
+}
+
+.btn__prev {
+   position: absolute;
+   left: 0;
+   top: 50%;
+}
+.btn__next {
+   position: absolute;
+   right: 0;
+   top: 50%;
 }
