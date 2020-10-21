@@ -1,0 +1,60 @@
+
+/* Ограничивающая оболочка */
+.slick-list {
+   overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+   display: flex;
+   align-items: flex-start;
+}
+
+/* конкретный слайдер */
+.slider__item {
+   position: relative;
+   padding: 0 25px;
+   .slick-arrow {
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+      font-size: 0;
+      width: 20px;
+      height: 40px;
+      opacity: 0.6;
+   }
+   .slick-arrow.slick-prev {
+      left: -10px;
+      background: url("../img/icons/chevron-left.svg") 0 0 / 100% no-repeat;
+   }
+
+   .slick-arrow.slick-next {
+      right: -10px;
+      background: url("../img/icons/chevron-right.svg") 0 0 / 100% no-repeat;
+   }
+
+   .slick-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .slick-dots li + li {
+      margin-left: 20px;
+   }
+   /* Активная точка */
+   
+   /* Элемент точки */
+   .slick-dots li button {
+      font-size: 0;
+      width: 10px;
+      height: 10px;
+      background-color: #666;
+      border-radius: 50%;
+   }
+
+   .slick-dots li.slick-active button {
+      background-color: #000;
+   }
+}
+

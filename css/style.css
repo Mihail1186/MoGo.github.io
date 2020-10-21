@@ -439,6 +439,7 @@ body {
 /* =====================servisces==================== */
 .services__column {
   margin-top: 100px;
+  text-align: left;
 }
 
 .services__items {
