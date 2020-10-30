@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -565,12 +566,12 @@ body {
   margin-top: 20px;
 }
 
-.wedo__text {
-  margin: 90px 0;
+.text__text {
   font-family: "Roboto-Regular";
   color: #999999;
   font-size: 15px;
   line-height: 24px;
+  margin: 90px 0;
 }
 
 .wedo__items {
@@ -712,7 +713,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 70px 110px;
 }
 
 .slider__image {
@@ -748,15 +752,84 @@ body {
   top: 50%;
 }
 
-/* slider style */
-.btn__prev {
-  position: absolute;
-  left: 0;
-  top: 50%;
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
 }
 
-.btn__next {
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* конкретный слайдер */
+.slider__track {
+  position: relative;
+  padding: 0 25px;
+  /* Активная точка */
+  /* Элемент точки */
+}
+
+.slider__track .slick-arrow {
   position: absolute;
-  right: 0;
   top: 50%;
+  z-index: 5;
+  font-size: 0;
+}
+
+.slider__track .slick-arrow.slick-prev {
+  left: 20px;
+}
+
+.slider__track .slick-arrow.slick-next {
+  right: 20px;
+}
+
+.slider__track .slick-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__track .slick-dots li + li {
+  margin-left: 20px;
+}
+
+.slider__track .slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #666;
+  border-radius: 50%;
+}
+
+.slider__track .slick-dots li.slick-active button {
+  background-color: #373737;
+}
+
+/* slider style */
+/* .btn__prev {
+   position: absolute;
+   left: 0;
+   top: 50%;
+}
+.btn__next {
+   position: absolute;
+   right: 0;
+   top: 50%;
+} */
+/* =========outteam=============== */
+.outteam__text {
+  font-family: "Roboto-Regular";
+  color: #999999;
+  font-size: 15px;
+  line-height: 24px;
 }

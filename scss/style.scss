@@ -407,11 +407,15 @@ body {
 }
 
 .wedo__text {
-   margin: 90px 0;
+
+}
+
+.text__text {
    font-family: "Roboto-Regular";
    color: #999999;
    font-size: 15px;
    line-height: 24px;
+   margin: 90px 0;
 }
 
 .wedo__items {
@@ -532,8 +536,7 @@ body {
    position: relative;
 }
 
-.slider__container{
-
+.slider__container {
 }
 
 .slider__track {
@@ -544,7 +547,8 @@ body {
 
 .slider__item {
    display: flex;
-   padding: 0 90px;
+   align-items: center;
+   padding: 70px 110px;
 }
 
 .slider__image {
@@ -561,6 +565,10 @@ body {
    line-height: 24px;
    margin-left: 60px;
 }
+
+.text__text {
+}
+
 .slider__autor {
    color: #333333;
    font-family: "KaushanScript";
@@ -579,12 +587,14 @@ body {
    }
 }
 
+@import "_slider";
+
 /* slider style */
 
 .slider__buttons {
 }
 
-.btn__prev {
+/* .btn__prev {
    position: absolute;
    left: 0;
    top: 50%;
@@ -593,4 +603,60 @@ body {
    position: absolute;
    right: 0;
    top: 50%;
+} */
+
+/* =========outteam=============== */
+
+.outteam {
+   &__inner {
+   }
+
+   &__row {
+   }
+
+   &__subtitle {
+   }
+
+   &__title {
+   }
+
+   &__text {
+      font-family: "Roboto-Regular";
+      color: #999999;
+      font-size: 15px;
+      line-height: 24px;
+   }
+}
+.container {
+}
+.inner {
+}
+.subtitle {
+}
+.title {
+   &__title {
+   }
+}
+.text {
+   &__text {
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.outteam__socials {
+
+}
+.outteam__link {
+
 }
